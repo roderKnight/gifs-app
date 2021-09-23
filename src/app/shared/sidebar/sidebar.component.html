@@ -1,0 +1,18 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">
+      gifsApp
+    </h3>
+    <hr class="text-light">
+
+    <div class="list-group list-reset">
+      <div class="list-group">
+        <a href="#"
+          class="list-group-item"
+          *ngFor="let item of historial"
+          (click)="search(item)"
+        >
+          {{item | titlecase }}
+        </a>
+      </div>
+    </div>
+</div>
